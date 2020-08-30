@@ -21,7 +21,7 @@ public class BookController {
     @RequestMapping(value = "/init",method = RequestMethod.GET)
     public Map<String,String> init(){
         Map<String,String> map=new HashMap<>();
-        bookRespository.save(new Book("1","黎杭是大帅哥","shuai"));
+        bookRespository.save(new Book("1","黎杭是大帅哥1","shuai"));
         map.put("code","200");
         return map;
     }
